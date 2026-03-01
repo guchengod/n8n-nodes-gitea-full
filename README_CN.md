@@ -1,5 +1,5 @@
 # n8n-nodes-gitea-full
-[English README](README.md)
+[English README](https://github.com/guchengod/n8n-nodes-gitea-full/blob/main/README.md)
 
 这是一个 n8n 社区节点，提供了与 [Gitea](https://gitea.io/) 的全面集成。它实现了与 Gitea 1.25 版本兼容的所有 API 接口，允许您在 n8n 工作流中自动化 Gitea 实例的几乎所有功能。
 
@@ -7,7 +7,7 @@
 
 [n8n](https://n8n.io/) 是一款基于公平代码许可（fair-code licensed）的工作流自动化平台。
 
-![](img.png)
+![Gitea node for n8n](https://raw.githubusercontent.com/guchengod/n8n-nodes-gitea-full/main/img.png)
 
 ## 功能特性
 

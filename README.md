@@ -1,6 +1,6 @@
 # n8n-nodes-gitea-full
 
-[中文说明](README_CN.md)
+[中文说明](https://github.com/guchengod/n8n-nodes-gitea-full/blob/main/README_CN.md)
 
 This is an n8n community node that provides a comprehensive integration with [Gitea](https://gitea.io/). It implements all API endpoints compatible with Gitea version 1.25, allowing you to automate almost every aspect of your Gitea instance.
 
@@ -8,7 +8,7 @@ This is an n8n community node that provides a comprehensive integration with [Gi
 
 [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/sustainable-use-license/) workflow automation platform.
 
-![](img.png)
+![Gitea node for n8n](https://raw.githubusercontent.com/guchengod/n8n-nodes-gitea-full/main/img.png)
 
 ## Features
 
