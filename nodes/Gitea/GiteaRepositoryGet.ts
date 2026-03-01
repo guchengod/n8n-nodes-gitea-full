@@ -37,7 +37,7 @@ export async function executeRepositoryGet(
 	context: IExecuteFunctions,
 	i: number,
 	baseUrl: string,
-): Promise<any> {
+): Promise<unknown> {
 	// 获取用户填写的 owner 和 repo 参数
 	const owner = context.getNodeParameter('owner', i) as string;
 	const repo = context.getNodeParameter('repo', i) as string;

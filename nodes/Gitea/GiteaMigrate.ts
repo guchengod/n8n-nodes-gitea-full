@@ -201,7 +201,7 @@ export async function executeMigrate(
 	context: IExecuteFunctions,
 	i: number,
 	baseUrl: string,
-): Promise<any> {
+): Promise<unknown> {
 	const clone_addr = context.getNodeParameter('clone_addr', i) as string;
 	const repo_name = context.getNodeParameter('repo_name', i) as string;
 	const service = context.getNodeParameter('service', i) as string;

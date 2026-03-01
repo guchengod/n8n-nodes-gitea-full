@@ -1,46 +1,65 @@
-# n8n-nodes-gitea-migrate
+# n8n-nodes-gitea-full
 
-This is an n8n community node. It lets you use _app/service name_ in your n8n workflows.
+[中文说明](README_CN.md)
 
-_App/service name_ is _one or two sentences describing the service this node integrates with_.
+This is an n8n community node that provides a comprehensive integration with [Gitea](https://gitea.io/). It implements all API endpoints compatible with Gitea version 1.25, allowing you to automate almost every aspect of your Gitea instance.
+
+**Disclaimer:** This is an unofficial community node. It is not affiliated with, endorsed by, or associated with Gitea or the Gitea project. The Gitea logo and trademarks used in this project are the property of their respective owners.
 
 [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/sustainable-use-license/) workflow automation platform.
 
-[Installation](#installation)
-[Operations](#operations)
-[Credentials](#credentials)
-[Compatibility](#compatibility)
-[Usage](#usage)
-[Resources](#resources)
-[Version history](#version-history)
+![](img.png)
+
+## Features
+
+This node covers a wide range of Gitea resources:
+
+- **Repository**: CRUD operations, migration, search, branching, branch protection, collaborators, and commits.
+- **Issue**: Complete issue management including comments, labels, milestones, dependencies, blocking, stopwatch, tracked time, subscriptions, reactions, and attachments.
+- **Organization**: Manage organizations, members, teams, and organizational repositories.
+- **User**: Manage profile settings, public/GPG keys, blocks, emails, followers, hooks, and OAuth2 applications.
+- **Package**: Support for Gitea package registry (Container, NPM, Maven, PyPI, Go, etc.).
+- **Notification**: View and manage notification threads.
+- **Admin**: System-wide administration including cron tasks, system hooks, user/org management, and unadopted repositories.
+- **Repository Actions**: Manage Gitea Actions artifacts, jobs, runs, runners, secrets, and variables.
+- **ActivityPub**: Basic ActivityPub support.
+- **Miscellaneous**: Markdown/Markup rendering, templates (gitignore, label, license), and system info.
 
 ## Installation
 
-Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) in the n8n community nodes documentation.
+### n8n UI
+1. Go to **Settings > Community Nodes**.
+2. Click on **Install a next node**.
+3. Enter `n8n-nodes-gitea-full` in the **Enter npm package name** field.
+4. Agree to the risks and click **Install**.
 
-## Operations
-
-_List the operations supported by your node._
+### CLI
+For Docker-based installations:
+```bash
+npm install n8n-nodes-gitea-full
+```
 
 ## Credentials
 
-_If users need to authenticate with the app/service, provide details here. You should include prerequisites (such as signing up with the service), available authentication methods, and how to set them up._
+To use this node, you'll need a Gitea API Token:
+
+1. Log in to your Gitea instance.
+2. Go to **Settings > Applications**.
+3. Under **Manage Access Tokens**, enter a name and click **Generate Token**.
+4. Copy the generated token.
+5. In n8n, create a new **Gitea API** credential and paste your **Base URL** (e.g., `https://gitea.com`) and **Access Token**.
 
 ## Compatibility
 
-_State the minimum n8n version, as well as which versions you test against. You can also include any known version incompatibility issues._
-
-## Usage
-
-_This is an optional section. Use it to help users with any difficult or confusing aspects of the node._
-
-_By the time users are looking for community nodes, they probably already know n8n basics. But if you expect new users, you can link to the [Try it out](https://docs.n8n.io/try-it-out/) documentation to help them get started._
+- Developed and tested against Gitea 1.25.
+- Requires n8n version 1.0.0 or higher.
 
 ## Resources
 
-* [n8n community nodes documentation](https://docs.n8n.io/integrations/#community-nodes)
-* _Link to app/service documentation._
+- [Gitea API Documentation](https://docs.gitea.com/api/1.25/)
+- [GitHub Repository](https://github.com/sungaowei/n8n-nodes-gitea)
+- [n8n community nodes documentation](https://docs.n8n.io/integrations/community-nodes/)
 
-## Version history
+## License
 
-_This is another optional section. If your node has multiple versions, include a short description of available versions and what changed, as well as any compatibility impact._
+[MIT](LICENSE)
