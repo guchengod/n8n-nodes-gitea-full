@@ -5,7 +5,9 @@
 	"license": "MIT",
 	"homepage": "",
 	"keywords": [
-		"n8n-community-node-package"
+		"n8n-community-node-package",
+		"n8n",
+		"gitea"
 	],
 	"author": {
 		"name": "sungaowei",
@@ -31,7 +33,7 @@
 		"n8nNodesApiVersion": 1,
 		"strict": true,
 		"credentials": [
-			"dist/credentials/GiteaApi.credentials.js"
+			"dist/nodes/credentials/GiteaApi.credentials.js"
 		],
 		"nodes": [
 			"dist/nodes/Gitea/Gitea.node.js"

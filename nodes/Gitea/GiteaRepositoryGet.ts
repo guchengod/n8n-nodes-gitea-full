@@ -1,36 +1,7 @@
 import { IExecuteFunctions, INodeProperties, IHttpRequestOptions } from 'n8n-workflow';
 
-// 1. 导出 Get 接口的专属 UI 参数
-export const giteaRepositoryGetFields: INodeProperties[] = [
-	{
-		displayName: 'Owner',
-		name: 'owner',
-		type: 'string',
-		required: true,
-		displayOptions: {
-			show: {
-				resource: ['repository'],
-				operation: ['get'], // 限制仅在 Get 操作时显示
-			},
-		},
-		default: '',
-		description: 'Owner of the repo',
-	},
-	{
-		displayName: 'Repository Name',
-		name: 'repo',
-		type: 'string',
-		required: true,
-		displayOptions: {
-			show: {
-				resource: ['repository'],
-				operation: ['get'], // 限制仅在 Get 操作时显示
-			},
-		},
-		default: '',
-		description: 'Name of the repo',
-	},
-];
+// 1. 导出 Get 接口的专属 UI 参数 (此处已清空，因为 owner 和 repo 已在 Gitea.node.ts 中全局定义)
+export const giteaRepositoryGetFields: INodeProperties[] = [];
 
 // 2. 导出 Get 接口专属的执行逻辑
 export async function executeRepositoryGet(
